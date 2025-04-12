@@ -7,7 +7,7 @@ load_dotenv()
 
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 GITHUB_USER = os.getenv('GITHUB_USER')
-REPO_NAME = os.getenv('REPO_NAME', f"test-repo-{int(time.time())}")  # Уникальное имя
+REPO_NAME = os.getenv('REPO_NAME', f"test-repo-{int(time.time())}")  
 
 headers = {
     "Authorization": f"token {GITHUB_TOKEN}",
